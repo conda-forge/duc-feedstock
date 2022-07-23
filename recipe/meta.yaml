@@ -1,17 +1,17 @@
 {% set name = "duc" %}
-{% set version = "1.4.4" %}
+{% set version = "1.4.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: "https://github.com/zevv/duc/releases/download/{{ version }}/duc-{{ version }}.tar.gz"
-  sha256: f4e7483dbeca4e26b003548f9f850b84ce8859bba90da89c55a7a147636ba922
+  url: https://github.com/zevv/duc/releases/download/{{ version }}/duc-{{ version }}.tar.gz
+  sha256: f84d39abf5afaade26cfa81382add6e97fb3b07fc626c2a6260e8d60c89c5a78
 
 build:
-  number: 3
-  skip: True  # [not linux]
+  number: 0
+  skip: true  # [not linux]
 
 requirements:
   build:
@@ -31,7 +31,7 @@ requirements:
     - pango
     - xorg-libx11
     - tokyocabinet
-  
+
 test:
   commands:
     - duc --help
@@ -45,7 +45,7 @@ about:
   license: GPL-2.0-only
   license_family: GPL
   license_file: COPYING
-  summary: 'Duc is a collection of tools for inspecting and visualizing disk usage.'
+  summary: Duc is a collection of tools for inspecting and visualizing disk usage.
   description: |
     Duc is a collection of tools for indexing, inspecting and visualizing disk usage. 
     Duc maintains a database of accumulated sizes of directories of the file system, 
