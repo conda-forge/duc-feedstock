@@ -44,7 +44,7 @@ about:
   # TODO: On next release will be released under LGPL-3.0-only
   license: GPL-2.0-only
   license_family: GPL
-  license_file: COPYING
+  license_file: LICENSE
   summary: Duc is a collection of tools for inspecting and visualizing disk usage.
   description: |
     Duc is a collection of tools for indexing, inspecting and visualizing disk usage. 
