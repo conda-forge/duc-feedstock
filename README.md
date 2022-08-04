@@ -3,7 +3,7 @@ About duc
 
 Home: http://duc.zevv.nl/
 
-Package license: GPL-2.0-only
+Package license: LGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/duc-feedstock/blob/main/LICENSE.txt)
 
